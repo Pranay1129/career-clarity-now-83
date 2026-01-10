@@ -15,17 +15,17 @@ const FinalCTASection = () => {
         className={`section-container text-center fade-up ${content.isVisible ? "visible" : ""}`}
       >
         <p className="text-xl md:text-2xl text-hero leading-relaxed mb-6">
-          Aapki sabse badi problem job ka na milna nahi hai.
+          Hum job ka wada nahi karte.
           <br />
-          <span className="text-primary font-semibold">Sabse badi problem clarity ka na hona hai.</span>
+          Lekin ye zaroor hai —
+          <br />
+          <span className="text-primary font-semibold">confusion khatam hoga.</span>
         </p>
 
         <p className="text-body text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          Is webinar ke baad hum job ka wada nahi karte,
+          Is webinar ke baad aapko pata hoga
           <br />
-          lekin ye wada zaroor hai —
-          <br />
-          <span className="text-foreground font-medium">aap confusion me nahi rahoge.</span>
+          ki aage kya karna hai aur kyun.
         </p>
 
         <CTAButton size="large" onClick={scrollToForm}>
