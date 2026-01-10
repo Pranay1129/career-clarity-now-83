@@ -10,29 +10,29 @@ const AuthoritySection = () => {
         className={`section-container fade-up ${content.isVisible ? "visible" : ""}`}
       >
         <h2 className="text-2xl md:text-3xl font-semibold text-hero mb-8">
-          Wo guidance jo college nahi deta
+          Guidance jo college kabhi nahi deta
         </h2>
 
         <div className="text-body text-lg leading-relaxed space-y-6 mb-8">
           <p>
-            Ye webinar wo log lead kar rahe hain
+            Is webinar ko wo professionals lead kar rahe hain
             <br />
-            jo 15+ saal se industry mein hain —
+            jinhone 15+ saal industry ke andar rehkar
             <br />
-            hiring ki hai, training di hai, decisions liye hain.
+            hiring, training aur career decisions dekhe hain.
           </p>
 
           <p>
-            Yahan koi theory nahi milegi.
+            Yahan theory nahi,
             <br />
-            <span className="text-foreground font-medium">Seedhi baat hogi — ground reality.</span>
+            <span className="text-foreground font-medium">ground reality batayi jaayegi.</span>
           </p>
         </div>
 
         <p className="text-subtle italic text-lg">
-          "Advice to sab dete hain…
+          "Advice har koi deta hai,
           <br />
-          direction sirf experience se milta hai."
+          direction sirf experience deta hai."
         </p>
       </div>
     </section>

@@ -12,7 +12,7 @@ const PricingSection = () => {
       >
         <div className="surface-elevated border border-border rounded-2xl p-8 md:p-12 text-center max-w-xl mx-auto glow-soft">
           <h2 className="text-xl md:text-2xl font-semibold text-hero mb-6">
-            Webinar mein entry
+            Webinar Entry Fee
           </h2>
 
           <div className="mb-6">
@@ -20,9 +20,9 @@ const PricingSection = () => {
           </div>
 
           <p className="text-body mb-8">
-            Bas itna — webinar attend karne ke liye.
+            Sirf webinar access ke liye.
             <br />
-            Koi course ya masterclass nahi hai ye.
+            Ye course ya masterclass ka price nahi hai.
           </p>
 
           <CTAButton size="large" className="w-full md:w-auto">
