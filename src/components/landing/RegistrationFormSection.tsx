@@ -28,7 +28,7 @@ const RegistrationFormSection = () => {
   };
 
   return (
-    <section className="py-20 md:py-28">
+    <section id="reserve-seat" className="py-20 md:py-28">
       <div
         ref={content.ref}
         className={`section-container fade-in ${content.isVisible ? "visible" : ""}`}
