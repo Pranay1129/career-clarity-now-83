@@ -30,11 +30,9 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-body leading-relaxed max-w-2xl mx-auto mb-10">
             Ye webinar motivation nahi hai.
             <br />
-            15+ years industry experience wale mentors
+            Yahan aapko bataya jaayega ki problem aapme nahi —
             <br />
-            aapko batayenge ki problem aapme nahi,
-            <br />
-            <span className="text-foreground font-medium">direction me hai.</span>
+            <span className="text-primary font-medium">direction me hai.</span>
           </p>
 
           <CTAButton size="large" onClick={scrollToForm}>
