@@ -11,17 +11,17 @@ const FinalCTASection = () => {
         className={`section-container text-center fade-up ${content.isVisible ? "visible" : ""}`}
       >
         <p className="text-xl md:text-2xl text-hero leading-relaxed mb-6">
-          Aapki sabse badi problem job ka na milna nahi hai.
+          Tumhari asli problem job nahi milna nahi hai.
           <br />
-          <span className="text-primary font-semibold">Sabse badi problem clarity ka na hona hai.</span>
+          <span className="text-primary font-semibold">Asli problem hai — clarity nahi hai.</span>
         </p>
 
         <p className="text-body text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          Is webinar ke baad hum job ka wada nahi karte,
+          Iske baad job milegi — ye hum nahi kehte.
           <br />
-          lekin ye wada zaroor hai —
+          Lekin itna zaroor hai —
           <br />
-          <span className="text-foreground font-medium">aap confusion me nahi rahoge.</span>
+          <span className="text-foreground font-medium">confusion mein nahi rahoge.</span>
         </p>
 
         <CTAButton size="large">

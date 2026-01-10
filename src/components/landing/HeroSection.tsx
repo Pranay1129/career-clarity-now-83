@@ -13,9 +13,9 @@ const HeroSection = () => {
           className={`fade-up ${headline.isVisible ? "visible" : ""}`}
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-hero leading-tight mb-6">
-            Degree complete ho chuki hai…
+            Degree to ho gayi…
             <br />
-            <span className="text-primary">par career abhi bhi atka hua hai?</span>
+            <span className="text-primary">par aage ka raasta clear nahi hai?</span>
           </h1>
         </div>
 
@@ -24,13 +24,13 @@ const HeroSection = () => {
           className={`fade-up ${subheadline.isVisible ? "visible" : ""}`}
         >
           <p className="text-lg md:text-xl text-body leading-relaxed max-w-2xl mx-auto mb-10">
-            Ye webinar motivation nahi hai.
+            Ye koi motivational session nahi hai.
             <br />
-            15+ years industry experience wale mentors
+            15+ saal ka industry experience rakne wale log
             <br />
-            aapko batayenge ki problem aapme nahi,
+            seedha baat karenge —
             <br />
-            <span className="text-foreground font-medium">direction me hai.</span>
+            <span className="text-foreground font-medium">problem tum nahi ho, direction hai.</span>
           </p>
 
           <CTAButton size="large">
