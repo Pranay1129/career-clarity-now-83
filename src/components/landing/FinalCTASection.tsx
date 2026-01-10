@@ -4,6 +4,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const FinalCTASection = () => {
   const content = useScrollAnimation(0.1, 100);
 
+  const scrollToForm = () => {
+    document.getElementById('reserve-seat')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="py-20 md:py-28">
       <div
@@ -24,7 +28,7 @@ const FinalCTASection = () => {
           <span className="text-foreground font-medium">aap confusion me nahi rahoge.</span>
         </p>
 
-        <CTAButton size="large">
+        <CTAButton size="large" onClick={scrollToForm}>
           Haan, Mujhe Clarity Chahiye
         </CTAButton>
       </div>

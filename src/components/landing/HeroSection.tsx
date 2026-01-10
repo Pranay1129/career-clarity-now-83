@@ -5,6 +5,10 @@ const HeroSection = () => {
   const headline = useScrollAnimation(0.1, 0);
   const subheadline = useScrollAnimation(0.1, 150);
 
+  const scrollToForm = () => {
+    document.getElementById('reserve-seat')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center py-20">
       <div className="section-container text-center">
@@ -33,7 +37,7 @@ const HeroSection = () => {
             <span className="text-foreground font-medium">direction me hai.</span>
           </p>
 
-          <CTAButton size="large">
+          <CTAButton size="large" onClick={scrollToForm}>
             Join the Career Reality Webinar
           </CTAButton>
         </div>

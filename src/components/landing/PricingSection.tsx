@@ -4,6 +4,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const PricingSection = () => {
   const content = useScrollAnimation(0.1, 150);
 
+  const scrollToForm = () => {
+    document.getElementById('reserve-seat')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="py-20 md:py-28 border-y border-border">
       <div
@@ -25,7 +29,7 @@ const PricingSection = () => {
             Ye course ya masterclass ka price nahi hai.
           </p>
 
-          <CTAButton size="large" className="w-full md:w-auto">
+          <CTAButton size="large" className="w-full md:w-auto" onClick={scrollToForm}>
             Pay ₹47 & Reserve My Seat
           </CTAButton>
         </div>
