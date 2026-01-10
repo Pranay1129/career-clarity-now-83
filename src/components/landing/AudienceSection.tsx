@@ -5,16 +5,16 @@ const AudienceSection = () => {
   const content = useScrollAnimation(0.1, 100);
 
   const forList = [
-    "B.A / B.Sc ke baad bhi ghar baithe ho",
-    "Job apply karke thak chuke ho",
-    "Career ko leke confused ho",
-    "Fake motivation nahi, real clarity chahte ho",
+    "Degree ke baad ghar pe baithe ho",
+    "Apply karte karte thak gaye ho",
+    "Samajh nahi aa raha kya karna chahiye",
+    "Motivational videos se nahi, clarity se kaam chalega",
   ];
 
   const notForList = [
-    "Shortcut chahne wale",
-    "Bina mehnat job chahne wale",
-    "Sirf free cheezon ke liye aane wale",
+    "Shortcut dhundhne wale",
+    "Bina mehnat job chahiye wale",
+    "Bas free cheezein chahiye wale",
   ];
 
   return (

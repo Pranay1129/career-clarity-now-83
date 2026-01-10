@@ -10,30 +10,30 @@ const RealitySection = () => {
         className={`section-container fade-in ${content.isVisible ? "visible" : ""}`}
       >
         <h2 className="text-2xl md:text-3xl font-semibold text-hero mb-8">
-          Sach ye hai — aap akela nahi ho.
+          Ek baat samajh lo — tum akele nahi ho.
         </h2>
 
         <div className="text-body text-lg leading-relaxed space-y-6 mb-10">
           <p>
-            Har saal lakhon students B.A / B.Sc complete karte hain.
+            Har saal lakhon bachche B.A / B.Sc karte hain.
             <br />
-            Unme se zyada log talented hote hain,
+            Bohot se talented bhi hote hain…
             <br />
-            lekin phir bhi job nahi milti.
+            phir bhi job nahi milti.
           </p>
 
           <p>
-            Iska reason ye nahi hai ki aap bekaar ho.
+            Iska matlab ye nahi ki tum kuch kar nahi sakte.
             <br />
-            Reason ye hai ki degree aur industry ke beech gap hai.
+            Matlab ye hai ki degree aur job ke beech ek gap hai.
           </p>
         </div>
 
         <div className="surface-elevated border border-border rounded-xl p-6 md:p-8">
           <p className="text-xl md:text-2xl font-semibold text-hero leading-relaxed">
-            "Problem degree nahi hai.
+            "Degree problem nahi hai.
             <br />
-            <span className="text-primary">Problem bina skill aur direction ke aage badhna hai."</span>
+            <span className="text-primary">Bina direction ke aage badhna — wahi problem hai."</span>
           </p>
         </div>
       </div>
