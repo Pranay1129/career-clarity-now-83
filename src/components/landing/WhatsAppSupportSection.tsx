@@ -3,7 +3,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const WhatsAppSupportSection = () => {
   const content = useScrollAnimation(0.1, 100);
 
-  const whatsappNumber = "919999999999"; // Replace with actual number
+  const whatsappNumber = "919311851783";
   const prefilledMessage = encodeURIComponent(
     "Hi, I have a question regarding the Career Reality Webinar."
   );
