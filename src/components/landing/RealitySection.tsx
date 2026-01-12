@@ -10,41 +10,46 @@ const RealitySection = () => {
         className={`section-container fade-in ${content.isVisible ? "visible" : ""}`}
       >
         <h2 className="text-2xl md:text-3xl font-semibold text-hero mb-8">
-          Aap akele nahi ho is situation mein.
+          You are not alone in this situation.
         </h2>
 
         <div className="text-body text-lg leading-relaxed space-y-6 mb-10">
           <p>
-            Har saal lakhon students B.A / B.Sc complete karte hain.
+            Every year, lakhs of students complete B.A / B.Sc.
             <br />
-            Talent bhi hota hai, mehnat bhi hoti hai —
+            They have talent.
             <br />
-            phir bhi career ka raasta clear nahi hota.
-          </p>
-
-          <p className="text-primary font-medium">
-            Ye aapki galti nahi hai.
+            They work hard.
           </p>
 
           <p>
-            College degree deta hai,
+            Still, their career path remains unclear.
+          </p>
+
+          <p className="text-primary font-medium">
+            👉 This is NOT your fault.
+          </p>
+
+          <p>
+            College gives degrees,
             <br />
-            par industry direction nahi batata.
+            but it does not explain how the industry actually works.
           </p>
         </div>
 
         <div className="surface-elevated border border-border rounded-xl p-6 md:p-8">
-          <p className="text-xl md:text-2xl font-semibold text-hero leading-relaxed">
-            The problem is NOT your degree.
+          <p className="text-xl md:text-2xl font-semibold text-hero leading-relaxed mb-4">
+            <span className="text-primary">⭐</span> The problem is NOT your degree.
           </p>
-          <p className="text-body text-lg mt-4 leading-relaxed">
-            Problem hai <span className="text-primary font-medium">lack of clarity</span> —
+          <p className="text-body text-lg leading-relaxed">
+            The real problem is <span className="text-primary font-medium">lack of clarity</span> —
             <br />
-            industry kya chahti hai
+            • What the industry wants
             <br />
-            aur aap kya kar rahe ho,
-            <br />
-            us gap ko koi explain nahi karta.
+            • What you are preparing for
+          </p>
+          <p className="text-primary font-medium mt-4">
+            👉 This gap is rarely explained to graduates.
           </p>
         </div>
       </div>

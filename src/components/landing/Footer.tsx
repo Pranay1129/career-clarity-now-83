@@ -12,7 +12,7 @@ const Footer = () => {
         <p className="text-subtle text-sm">
           An initiative by Mera Server
           <br />
-          15+ years industry experience
+          <span className="text-primary">⭐</span> 15+ years of industry experience
         </p>
       </div>
     </footer>

@@ -40,7 +40,9 @@ const RegistrationFormSection = () => {
                 Reserve Your Seat
               </h2>
               <p className="text-subtle text-sm text-center mb-8">
-                Fill these details to continue. Payment comes next.
+                Fill in your details to continue.
+                <br />
+                <span className="text-primary">👉 Payment comes next.</span>
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-5">
@@ -100,7 +102,7 @@ const RegistrationFormSection = () => {
               </form>
 
               <p className="text-subtle text-xs text-center mt-6">
-                Your details will be used only for webinar communication.
+                🔒 Your details will be used only for webinar communication.
               </p>
             </>
           ) : (

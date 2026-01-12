@@ -21,9 +21,9 @@ const WhatsAppSupportSection = () => {
           rel="noopener noreferrer"
           className="inline-block px-6 py-3 border border-border rounded-lg text-body hover:border-primary/50 hover:text-hero transition-colors"
         >
-          Webinar related questions?
+          Have questions about the webinar?
           <br />
-          Chat with us on WhatsApp
+          <span className="text-primary">👉 Chat with us on WhatsApp</span>
         </a>
         <p className="text-subtle text-xs mt-3">
           No sales.

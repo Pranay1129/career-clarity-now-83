@@ -20,24 +20,22 @@ const PricingSection = () => {
           </h2>
 
           <div className="mb-6">
-            <span className="text-5xl md:text-6xl font-bold text-primary">₹47</span>
+            <span className="text-2xl text-subtle line-through mr-3">₹399</span>
+            <span className="text-5xl md:text-6xl font-bold text-primary">₹9</span>
           </div>
 
-          <p className="text-body mb-6">
-            Sirf webinar access ke liye.
-            <br />
-            <span className="text-subtle text-sm">Ye course ya masterclass nahi hai.</span>
+          <p className="text-primary font-medium mb-4">
+            ⚠️ Limited-time access for serious learners only.
           </p>
 
-          <div className="text-left mb-8 space-y-2">
-            <p className="text-body text-sm font-medium mb-3">For just ₹47, you get:</p>
-            <p className="text-body text-sm">- Career clarity</p>
-            <p className="text-body text-sm">- Direction, not motivation</p>
-            <p className="text-body text-sm">- Real-world perspective</p>
-          </div>
+          <p className="text-body mb-6">
+            This is NOT a course or masterclass.
+            <br />
+            <span className="text-subtle text-sm">This fee ensures committed participation.</span>
+          </p>
 
           <CTAButton size="large" className="w-full md:w-auto" onClick={scrollToForm}>
-            Pay ₹47 & Reserve Your Seat
+            Pay ₹9 & Reserve My Seat
           </CTAButton>
         </div>
       </div>

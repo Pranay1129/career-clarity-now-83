@@ -1,5 +1,4 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Check } from "lucide-react";
 
 const ValueSection = () => {
   const content = useScrollAnimation(0.1, 100);
@@ -7,9 +6,9 @@ const ValueSection = () => {
   const valuePoints = [
     "Clear career options after graduation",
     "Industry reality vs social media hype",
-    "IT & skill-based career paths explained",
-    "Why most graduates stay stuck",
-    "What to do next — and why",
+    "IT & skill-based career paths explained clearly",
+    "Why most graduates remain stuck",
+    "What to do next — and why it actually matters",
   ];
 
   return (
@@ -25,7 +24,7 @@ const ValueSection = () => {
         <ul className="space-y-4 mb-10">
           {valuePoints.map((point, index) => (
             <li key={index} className="flex items-start gap-3">
-              <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+              <span className="text-primary mt-0.5 flex-shrink-0">👉</span>
               <span className="text-body text-lg">{point}</span>
             </li>
           ))}
@@ -33,11 +32,11 @@ const ValueSection = () => {
 
         <div className="surface-elevated border border-border rounded-xl p-6 md:p-8">
           <p className="text-xl md:text-2xl font-semibold text-hero leading-relaxed">
-            No theory.
+            <span className="text-primary">⚠️</span> No theory.
             <br />
-            No sugar-coated advice.
+            <span className="text-primary">⚠️</span> No sugar-coated advice.
             <br />
-            <span className="text-primary">Only ground reality.</span>
+            <span className="text-primary">✅</span> Only real-world clarity.
           </p>
         </div>
       </div>

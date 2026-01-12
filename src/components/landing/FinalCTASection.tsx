@@ -15,23 +15,30 @@ const FinalCTASection = () => {
         className={`section-container text-center fade-up ${content.isVisible ? "visible" : ""}`}
       >
         <p className="text-xl md:text-2xl text-hero leading-relaxed mb-6">
-          Hum job ka wada nahi karte.
-          <br />
-          Lekin ye zaroor hai —
-          <br />
-          <span className="text-primary font-semibold">confusion khatam hoga.</span>
+          We do <span className="text-primary font-semibold">NOT</span> promise jobs or placements.
         </p>
 
-        <p className="text-body text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          Is webinar ke baad aapko pata hoga:
+        <p className="text-primary font-medium mb-6">
+          ⚠️ This webinar is designed to give clarity — not guarantees.
+        </p>
+
+        <div className="text-body text-lg leading-relaxed mb-6 max-w-xl mx-auto">
+          <p className="mb-4">What we DO promise:</p>
+          <p>✅ You will understand which direction suits you</p>
+          <p>✅ Why you are currently stuck</p>
+          <p>✅ What steps to take next — and why</p>
+        </div>
+
+        <p className="text-subtle text-base mb-10 max-w-xl mx-auto">
+          No false hopes.
           <br />
-          - Aage kya karna hai
+          No exaggerated claims.
           <br />
-          - Aur kyun karna hai
+          Only honest guidance.
         </p>
 
         <CTAButton size="large" onClick={scrollToForm}>
-          Yes, I Want Career Clarity
+          Yes, I Want Clear Career Direction
         </CTAButton>
       </div>
     </section>
