@@ -23,13 +23,15 @@ const FinalCTASection = () => {
         </p>
 
         <p className="text-body text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          Is webinar ke baad aapko pata hoga
+          Is webinar ke baad aapko pata hoga:
           <br />
-          ki aage kya karna hai aur kyun.
+          - Aage kya karna hai
+          <br />
+          - Aur kyun karna hai
         </p>
 
         <CTAButton size="large" onClick={scrollToForm}>
-          Haan, Mujhe Clarity Chahiye
+          Yes, I Want Career Clarity
         </CTAButton>
       </div>
     </section>

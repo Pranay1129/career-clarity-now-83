@@ -23,14 +23,21 @@ const PricingSection = () => {
             <span className="text-5xl md:text-6xl font-bold text-primary">₹47</span>
           </div>
 
-          <p className="text-body mb-8">
+          <p className="text-body mb-6">
             Sirf webinar access ke liye.
             <br />
             <span className="text-subtle text-sm">Ye course ya masterclass nahi hai.</span>
           </p>
 
+          <div className="text-left mb-8 space-y-2">
+            <p className="text-body text-sm font-medium mb-3">For just ₹47, you get:</p>
+            <p className="text-body text-sm">- Career clarity</p>
+            <p className="text-body text-sm">- Direction, not motivation</p>
+            <p className="text-body text-sm">- Real-world perspective</p>
+          </div>
+
           <CTAButton size="large" className="w-full md:w-auto" onClick={scrollToForm}>
-            Pay ₹47 & Reserve My Seat
+            Pay ₹47 & Reserve Your Seat
           </CTAButton>
         </div>
       </div>
