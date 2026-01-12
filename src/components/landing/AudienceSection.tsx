@@ -6,15 +6,16 @@ const AudienceSection = () => {
 
   const forList = [
     "B.A / B.Sc ke baad bhi ghar baithe ho",
-    "Job apply karke thak chuke ho",
+    "Job apply kar-kar ke thak chuke ho",
     "Career ko leke confused ho",
-    "Fake motivation nahi, real clarity chahte ho",
+    "Fake motivation se bore ho",
+    "Real guidance chahte ho",
   ];
 
   const notForList = [
-    "Shortcut chahne wale",
-    "Bina mehnat job chahne wale",
-    "Sirf free cheezon ke liye aane wale",
+    "Shortcut chahte ho",
+    "Bina mehnat job chahte ho",
+    "Sirf free cheezon ke liye aate ho",
   ];
 
   return (

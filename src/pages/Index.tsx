@@ -1,6 +1,7 @@
 import HeroSection from "@/components/landing/HeroSection";
 import RealitySection from "@/components/landing/RealitySection";
 import AudienceSection from "@/components/landing/AudienceSection";
+import ValueSection from "@/components/landing/ValueSection";
 import AuthoritySection from "@/components/landing/AuthoritySection";
 import PricingSection from "@/components/landing/PricingSection";
 import RegistrationFormSection from "@/components/landing/RegistrationFormSection";
@@ -14,6 +15,7 @@ const Index = () => {
       <HeroSection />
       <RealitySection />
       <AudienceSection />
+      <ValueSection />
       <AuthoritySection />
       <PricingSection />
       <RegistrationFormSection />

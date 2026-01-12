@@ -10,30 +10,30 @@ const AuthoritySection = () => {
         className={`section-container fade-up ${content.isVisible ? "visible" : ""}`}
       >
         <h2 className="text-2xl md:text-3xl font-semibold text-hero mb-8">
-          Guidance jo college nahi deta
+          Guidance colleges don't provide.
         </h2>
 
         <div className="text-body text-lg leading-relaxed space-y-6 mb-8">
           <p>
             Is webinar mein guidance milegi un professionals se
             <br />
-            jinhone 15+ saal industry ke andar rehkar
-            <br />
-            <span className="text-primary font-medium">hiring, training aur career decisions dekhe hain.</span>
+            jinhone <span className="text-primary font-medium">15+ years industry ke andar rehkar:</span>
           </p>
 
-          <p>
-            Yahan theory nahi — ground reality batayi jaayegi.
-            <br />
-            Wo cheezein jo aapko koi nahi batata.
-          </p>
+          <ul className="space-y-2 pl-4">
+            <li>- Hiring dekhi hai</li>
+            <li>- Training di hai</li>
+            <li>- Real career decisions liye hain</li>
+          </ul>
         </div>
 
-        <p className="text-subtle italic text-lg">
-          "Advice har koi deta hai.
-          <br />
-          Direction sirf experience se aata hai."
-        </p>
+        <div className="surface-elevated border border-border rounded-xl p-6 md:p-8">
+          <p className="text-lg md:text-xl text-subtle italic leading-relaxed">
+            "Advice har koi deta hai.
+            <br />
+            <span className="text-hero">Direction sirf experience se aati hai."</span>
+          </p>
+        </div>
       </div>
     </section>
   );

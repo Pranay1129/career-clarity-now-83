@@ -17,25 +17,34 @@ const RealitySection = () => {
           <p>
             Har saal lakhon students B.A / B.Sc complete karte hain.
             <br />
-            Talent hai, mehnat bhi hai —
+            Talent bhi hota hai, mehnat bhi hoti hai —
             <br />
-            phir bhi aage ka raasta clear nahi hota.
+            phir bhi career ka raasta clear nahi hota.
+          </p>
+
+          <p className="text-primary font-medium">
+            Ye aapki galti nahi hai.
           </p>
 
           <p>
-            Ye aapki galti nahi hai.
+            College degree deta hai,
             <br />
-            Degree aur industry ke beech ek gap hai
-            <br />
-            jo college kabhi address nahi karta.
+            par industry direction nahi batata.
           </p>
         </div>
 
         <div className="surface-elevated border border-border rounded-xl p-6 md:p-8">
           <p className="text-xl md:text-2xl font-semibold text-hero leading-relaxed">
-            "Problem degree nahi hai.
+            The problem is NOT your degree.
+          </p>
+          <p className="text-body text-lg mt-4 leading-relaxed">
+            Problem hai <span className="text-primary font-medium">lack of clarity</span> —
             <br />
-            <span className="text-primary">Problem clarity ka na hona hai."</span>
+            industry kya chahti hai
+            <br />
+            aur aap kya kar rahe ho,
+            <br />
+            us gap ko koi explain nahi karta.
           </p>
         </div>
       </div>
