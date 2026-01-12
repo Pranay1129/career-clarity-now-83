@@ -12,19 +12,88 @@ const RegistrationFormSection = () => {
     mobile: "",
     email: "",
   });
+  const [errors, setErrors] = useState({
+    fullName: "",
+    mobile: "",
+  });
+
+  const validateMobile = (mobile: string): string => {
+    const cleanedMobile = mobile.replace(/\s/g, "");
+    
+    if (!cleanedMobile) {
+      return "Mobile number is required";
+    }
+    
+    if (!/^\d+$/.test(cleanedMobile)) {
+      return "Please enter only digits (0-9)";
+    }
+    
+    if (cleanedMobile.length < 10) {
+      return `Enter ${10 - cleanedMobile.length} more digit${10 - cleanedMobile.length > 1 ? 's' : ''}`;
+    }
+    
+    if (cleanedMobile.length > 10) {
+      return "Mobile number must be exactly 10 digits";
+    }
+    
+    if (!/^[6-9]\d{9}$/.test(cleanedMobile)) {
+      return "Enter a valid Indian mobile number (starts with 6-9)";
+    }
+    
+    return "";
+  };
+
+  const validateFullName = (name: string): string => {
+    if (!name.trim()) {
+      return "Full name is required";
+    }
+    if (name.trim().length < 2) {
+      return "Name must be at least 2 characters";
+    }
+    return "";
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (formData.fullName.trim() && formData.mobile.trim()) {
+    
+    const fullNameError = validateFullName(formData.fullName);
+    const mobileError = validateMobile(formData.mobile);
+    
+    setErrors({
+      fullName: fullNameError,
+      mobile: mobileError,
+    });
+    
+    if (!fullNameError && !mobileError) {
       setIsSubmitted(true);
     }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
+    
+    // Clear error on change
+    if (errors[name as keyof typeof errors]) {
+      setErrors((prev) => ({
+        ...prev,
+        [name]: "",
+      }));
+    }
+  };
+
+  const handleMobileBlur = () => {
+    const error = validateMobile(formData.mobile);
+    setErrors((prev) => ({ ...prev, mobile: error }));
+  };
+
+  const handleNameBlur = () => {
+    const error = validateFullName(formData.fullName);
+    setErrors((prev) => ({ ...prev, fullName: error }));
   };
 
   return (
@@ -57,9 +126,13 @@ const RegistrationFormSection = () => {
                     required
                     value={formData.fullName}
                     onChange={handleChange}
+                    onBlur={handleNameBlur}
                     placeholder="Enter your full name"
-                    className="bg-background border-border focus:border-primary/50"
+                    className={`bg-background border-border focus:border-primary/50 ${errors.fullName ? 'border-destructive' : ''}`}
                   />
+                  {errors.fullName && (
+                    <p className="text-destructive text-xs mt-1">{errors.fullName}</p>
+                  )}
                 </div>
 
                 <div className="space-y-2">
@@ -70,12 +143,18 @@ const RegistrationFormSection = () => {
                     id="mobile"
                     name="mobile"
                     type="tel"
+                    inputMode="numeric"
+                    maxLength={10}
                     required
                     value={formData.mobile}
                     onChange={handleChange}
-                    placeholder="Enter your mobile number"
-                    className="bg-background border-border focus:border-primary/50"
+                    onBlur={handleMobileBlur}
+                    placeholder="Enter 10-digit mobile number"
+                    className={`bg-background border-border focus:border-primary/50 ${errors.mobile ? 'border-destructive' : ''}`}
                   />
+                  {errors.mobile && (
+                    <p className="text-destructive text-xs mt-1">{errors.mobile}</p>
+                  )}
                 </div>
 
                 <div className="space-y-2">
